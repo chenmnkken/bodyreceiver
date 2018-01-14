@@ -86,6 +86,8 @@ console.log(ctx.request.body);
 }
 ```
 
+If use `FileReader` read base64 file in browser, then upload the base64 file, set the `content-type` header to `text/plain`.
+
 ### Options
 
 * **accept** `Regexp / Function`, *Upload file only*, default is `null`, means accept all file type.
