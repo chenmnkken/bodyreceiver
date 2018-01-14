@@ -48,7 +48,7 @@ BodyReceiver main Class, will return new instance.
 var bodyReceiver = new BodyReceiver();
 ```
 
-* **bodyReceiver.startup()** 
+* **bodyReceiver.startup()**
 
 Register `bodyReceiver` middleware for Koa.
 
@@ -56,6 +56,7 @@ Register `bodyReceiver` middleware for Koa.
 ### Upload file
 
 ```html
+<!-- Example form html -->
 <form action="/file" method="POST" enctype="multipart/form-data">
     <input type="text" name="firstname" />
     <input type="text" name="lastname" />
@@ -80,8 +81,8 @@ console.log(ctx.request.body);
             size: 976, // filesize
             contents: <Buffer ...>,  // file contents is Buffer type
             createReadStream: [Function]  // readable Stream
-	   }]
-	}
+        }]
+    }
 }
 ```
 
@@ -93,11 +94,11 @@ limit accept file type, if `accept` is Regexp, will test file MIME type, if `acc
 
 ```javascript
 {
-	accept: function (type, size) {
-		// must return Boolean result
-	}
+    accept: function (type, size) {
+        // must return Boolean result
+    }
 }
-``` 
+```
 
 * **write** `Boolean`, *Upload file only*, default is `false`.
 
@@ -125,9 +126,9 @@ Custom generate file name rules.
 
 ```javascript
 {
-	generateFilename: function (originName, hashName, extName) {
-		// must return a new filename
-	}
+    generateFilename: function (originName, hashName, extName) {
+        // must return a new filename
+    }
 }
 ```
 
@@ -143,8 +144,8 @@ The BodyReceiver can emit various events.
 
 ```javascript
 bodyReceiver.on('error', function (error, ctx) {
-	console.error(error);
-	ctx.throw(error, 422);
+    console.error(error);
+    ctx.throw(error, 422);
 });
 ```
 
