@@ -1,6 +1,6 @@
 # koa-bodyreceiver
 
-A Node.js request body receiver & parser for Koa@2+.
+A request body receiver & parser middleware for Koa@2+.
 
 Support body type:
 
@@ -13,16 +13,16 @@ Support body type:
 
 ```
 // npm
-npm install koa-bodyreceiver
+npm install bodyreceiver
 // yarn
-yarn add koa-bodyreceiver
+yarn add bodyreceiver
 ```
 
 ### Usage
 
 ```javascript
 var Koa = require('koa');
-var BodyReceiver = require('koa-bodyreceiver');
+var BodyReceiver = require('bodyreceiver');
 
 var app = new Koa();
 var bodyReceiver = new BodyReceiver();
