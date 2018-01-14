@@ -1,0 +1,33 @@
+{
+  "name": "bodyreceiver",
+  "version": "1.0.0",
+  "description": "A Node.js request body receiver & parser for Koa@2+.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/eslint -c eslintrc.json index.js lib && cd test && ../node_modules/.bin/mocha ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bytes": "3.0.0",
+    "mkdirp": "0.5.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.0.1",
+    "eslint": "4.15.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-node": "5.2.1",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-standard": "3.0.1",
+    "koa": "2.4.1",
+    "mocha": "4.1.0",
+    "rimraf": "2.6.2",
+    "supertest": "3.0.0"
+  }
+}

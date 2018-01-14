@@ -1,0 +1,22 @@
+{
+    "extends": "standard",
+    "env": {
+        "node": true
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "babel"
+    ],
+    "rules": {
+        "strict": 0,
+        "semi": [2, "always"],
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "brace-style": [2, "stroustrup"],
+        "operator-linebreak": [2, "after"],
+        "generator-star-spacing": [2, {"before": false, "after": true}],
+        "babel/new-cap": 2,
+        "babel/object-curly-spacing": [2, "always"],
+        "babel/no-invalid-this": 2,
+        "babel/semi": 2
+    }
+}
