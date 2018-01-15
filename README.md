@@ -1,4 +1,4 @@
-# koa-bodyreceiver
+# bodyreceiver
 
 A request body receiver & parser middleware for Koa@2+.
 
