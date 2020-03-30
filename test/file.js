@@ -63,7 +63,7 @@ describe('Body Receiver test file upload', function () {
                         return done(err);
                     }
 
-                    assert.equal(contents.compare(contents, res.body), 0);
+                    assert.equal(contents.compare(res.body), 0);
                     done();
                 });
             });
@@ -111,7 +111,7 @@ describe('Body Receiver test file upload', function () {
                         return done(err);
                     }
 
-                    assert.equal(contents.compare(contents, res.body), 0);
+                    assert.equal(contents.compare(res.body), 0);
                     done();
                 });
             });
